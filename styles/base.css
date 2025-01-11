@@ -1,4 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap');
+
+
+.roboto-serif {
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style: normal;
+  font-variation-settings:"wdth" 100,"GRAD" 0;
+}
+
+.lobster-two-regular {
+    font-family: "Lobster Two", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lobster-two-bold {
+    font-family: "Lobster Two", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lobster-two-regular-italic {
+    font-family: "Lobster Two", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lobster-two-bold-italic {
+    font-family: "Lobster Two", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
 
 body{
     font-family: 'Roboto', sans-serif;
