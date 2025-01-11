@@ -13,13 +13,19 @@ footer {
 	justify-content: center;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
+.highlight-name {
+    color: darkblue;
+}
+h3 {
+    text-align: center;
+}
 nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
     background-color: #36454f;
-    margin: 0 auto;
+    margin: 0;
     max-width: 5000px;
     height: 70px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.9); ;
@@ -45,7 +51,7 @@ nav ul li a:hover {
 }
 
 
-#titles {
+#first-title, #third-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,18 +64,20 @@ nav ul li a:hover {
 p.first {
     float: left;
     margin-right: 1rem;
+    margin-top: 3rem;
 }
 #my-picture {
     width: 250px; 
     height: auto;
     border-radius: 50%; 
     border: 2px solid #ccc;
-    margin-left: 1rem;
+    margin-right: 10rem;
+    margin-top: 3rem;
 }
 
 p.second {
     float: right;
-    margin-right: 1rem;
+    margin-right: 4rem;
 }
 
 #flag {
@@ -107,4 +115,12 @@ main {
     height: auto;
     display: block;
     margin: 1rem 0;
+}
+
+#web-links {
+    margin-top: 12rem;
+}
+
+#date {
+    color: darkblue;
 }
