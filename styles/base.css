@@ -84,7 +84,7 @@ nav ul li a {
 
 
 nav ul li a:hover {
-    font-weight: 800;
+    font-weight: 700;
     text-decoration: underline;
     text-decoration-color: aqua;
 }
