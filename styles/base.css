@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap');
+
 body{
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
 }
 header,
 footer {
@@ -16,7 +22,8 @@ footer {
 .highlight-name {
     color: darkblue;
 }
-h3 {
+h2 {
+    font-family: 'Lobster', cursive;
     text-align: center;
 }
 nav ul {
