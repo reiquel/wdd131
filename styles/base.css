@@ -52,7 +52,7 @@ footer {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .highlight-name {
-    color: darkblue;
+    color: rgb(2, 2, 80);
 }
 h2 {
     font-family: 'Lobster', cursive;
@@ -162,5 +162,5 @@ main {
 }
 
 #date {
-    color: darkblue;
+    color: rgb(2, 2, 80);
 }
