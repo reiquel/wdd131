@@ -1,0 +1,29 @@
+@media (min-width: 37.5em) {
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+        flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .gallery img {
+        width: 70%; /* Ensure images scale properly within their grid cells */
+        height: auto; /* Maintain image aspect ratio */
+        object-fit: cover; /* Ensures the image fits well within the grid cell */
+        border-radius: 5px; /* Adds a slight rounding to images */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for styling */
+    }
+}

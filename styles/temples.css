@@ -1,0 +1,101 @@
+
+.roboto {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+
+.funnel-sans{
+  font-family: "Funnel Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+}
+
+#menu::before {
+	content: "☰";
+    color: white;
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	border: 1px solid white;
+	font-weight: 200;
+    transition: all 0.3s ease;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+
+body{
+    font-family: "Funnel Sans", serif;
+    background-color: white;
+    color: black;
+}
+
+header, footer {
+    font-family: "Roboto", serif;
+    background-color: rgb(30, 3, 56);
+    color: white;
+    
+}
+
+h2, footer {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery figure {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
