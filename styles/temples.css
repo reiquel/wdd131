@@ -20,16 +20,28 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
 #menu {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
 	color: #000;
+    
 }
 
 #menu::before {
 	content: "☰";
     color: white;
+    margin-left: 250px;
+   
+    left: 40px;
 }
 
 #menu.open::before {
@@ -52,7 +64,7 @@
 }
 .navigation a:hover {
 	border: 1px solid white;
-	font-weight: 200;
+	font-weight: 50px;
     transition: all 0.3s ease;
 }
 
@@ -72,6 +84,7 @@ header, footer {
     font-family: "Roboto", serif;
     background-color: rgb(30, 3, 56);
     color: white;
+    padding: 20px;
     
 }
 

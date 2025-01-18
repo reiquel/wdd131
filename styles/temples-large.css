@@ -1,6 +1,16 @@
-@media (min-width: 37.5em) {
+@media (min-width: 54.5em) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    footer {
+        padding: 30px;
+    }
 	#menu {
-		display: none; /* hide hamburger button */
+		display: none; 
 	}
 
 	.navigation {
@@ -20,10 +30,10 @@
     }
 
     .gallery img {
-        width: 70%; /* Ensure images scale properly within their grid cells */
-        height: auto; /* Maintain image aspect ratio */
-        object-fit: cover; /* Ensures the image fits well within the grid cell */
-        border-radius: 5px; /* Adds a slight rounding to images */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for styling */
+        width: 70%; 
+        height: auto;
+        object-fit: cover; 
+        border-radius: 5px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     }
 }
