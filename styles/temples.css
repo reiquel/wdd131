@@ -1,7 +1,6 @@
 
 .roboto {
   font-family: "Roboto", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
  
@@ -9,7 +8,6 @@
 
 .funnel-sans{
   font-family: "Funnel Sans", serif;
-  font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
 }
@@ -23,9 +21,9 @@
 header {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    
 }
-
-
 
 
 #menu {
@@ -33,15 +31,19 @@ header {
 	border: 0;
 	background: none;
 	color: #000;
-    
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: baseline;
+    border-bottom: 50px;
 }
 
 #menu::before {
 	content: "☰";
     color: white;
-    margin-left: 250px;
-   
-    left: 40px;
+
 }
 
 #menu.open::before {
@@ -64,15 +66,23 @@ header {
 }
 .navigation a:hover {
 	border: 1px solid white;
-	font-weight: 50px;
     transition: all 0.3s ease;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
-	display: block;
+.navigation.open a {
+    display: block;
 }
 
+header.open #page-title {
+    display: none;
+}
+
+header.open {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
 body{
     font-family: "Funnel Sans", serif;
@@ -84,7 +94,7 @@ header, footer {
     font-family: "Roboto", serif;
     background-color: rgb(30, 3, 56);
     color: white;
-    padding: 20px;
+    padding: 28px;
     
 }
 
@@ -109,6 +119,6 @@ h2, footer {
 }
 
 main {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 20px;
 }
