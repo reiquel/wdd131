@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Reiquel y. Carela. Learn about place images in an effective when designing a website">
+            <meta name="author" content="Reiquel Y. Carela">
+            <title>WDD 131: Place - Reiquel Y. Carela</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="styles/place.css">
+            <link rel="stylesheet" href="styles/place-large.css">
+            <script src="scripts/place.js" defer></script>
+        </head>
+<body>
+    <header>
+        <h1 id="page-title">Dominican Republic</h1>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+                <picture class="optipic">
+                    <source media="(max-width: 766px)" srcset="images/small.webp">
+                    <source media="(min-width: 54.5em)" srcset="images/large.webp">
+                    <img src="images/large.webp" alt="Week 03">
+                </picture>
+        </section>
+            <section class="data">
+                <h2>Data</h2>
+                <ul>
+                  <li><strong>Area:</strong> 48,671 sq km</li>
+                  <li><strong>Population:</strong> 10,535,535</li>
+                  <li><strong>Capital:</strong> Santo Domingo</li>
+                  <li><strong>Languages:</strong> Spanish</li>
+                  <li><strong>Currency:</strong> Dominican Peso</li>
+                  <li><strong>Time Zone:</strong> UTC-4</li>
+                  <li><strong>Calling Code:</strong> +1</li>
+                  <li><strong>Internet TLD:</strong> .do</li>
+                </ul>
+              </section>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temperature">27°C</span></li>
+                <li><strong>Condition:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> <span id="wind-speed">10 km/h</span></li>
+                <li><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 📟 Reiquel Y. Carela 📟 Dominican Republic</p>
+        <p id="date"></p>
+    </footer>
+</body>
+</html>
