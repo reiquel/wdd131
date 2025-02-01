@@ -70,21 +70,21 @@ const temples = [
         location: "Accra, Ghana",
         dedicated: "2004, January, 11",
         area: 17000,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x225/accra-ghana-temple-detail-249022-2400x1200.jpg"
+        imageUrl: "images/accra-ghana-temple.webp"
     },
     {
         templeName: "Oklahoma City Oklahoma",
         location: "Oklahoma City, Oklahoma, United States",
         dedicated: "2000, July, 30",
         area: 11000,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/oklahoma-city-oklahoma-temple/oklahoma-city-oklahoma-temple-3132.jpg"
+        imageUrl: "images/oklahoma-city-oklahoma-temple.webp"
     },
     {
         templeName: "Montreal Quebec",
         location: "Montreal, Quebec, Canada",
         dedicated: "2000, June, 4",
         area: 11500,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/montreal-quebec-temple/montreal-quebec-temple-4155.jpg"
+        imageUrl: "images/montreal-quebec-temple.webp"
     }
 ];
 
