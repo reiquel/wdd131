@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Reiquel Y. Carela. Learn about the temples in the world">
+    <meta name="author" content="Reiquel Y. Carela">
+    <title>WDD 131: Temples - Reiquel Y. Carela</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="page-title">Temple Album</h1>
+        <button id="menu" aria-label="Open Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li class="active"><a href="#" data-filter="all">📖 Home</a></li>
+                <li><a href="#" data-filter="old">⏳ Old</a></li>
+                <li><a href="#" data-filter="new">✨ New</a></li>
+                <li><a href="#" data-filter="large">🏛️ Large</a></li>
+                <li><a href="#" data-filter="small">🏠 Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <section class="gallery" id="gallery"></section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 📟 Reiquel Y. Carela 📟 Dominican Republic</p>
+        <p id="date"></p>
+    </footer>
+</body>
+</html>

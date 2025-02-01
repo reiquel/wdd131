@@ -1,0 +1,124 @@
+
+.roboto {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+   
+  }
+  
+  .funnel-sans{
+    font-family: "Funnel Sans", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      
+  }
+  
+  
+  #menu {
+      font-size: 1.5rem;
+      border: 0;
+      background: none;
+      color: #000;
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: nowrap;
+      align-content: stretch;
+      justify-content: flex-start;
+      align-items: baseline;
+      border-bottom: 50px;
+  }
+  
+  #menu::before {
+      content: "☰";
+      color: white;
+  
+  }
+  
+  #menu.open::before {
+      content: "❎";
+  }
+  
+  .navigation {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      list-style: none;
+  }
+  
+  .navigation a {
+      display: none;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+  }
+  .navigation a:hover {
+      border: 1px solid white;
+      transition: all 0.3s ease;
+  }
+  
+  /* when the button is clicked - the open class is toggled (added/removed) */
+  .navigation.open a {
+      display: block;
+  }
+  
+  header.open #page-title {
+      display: none;
+  }
+  
+  header.open {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+  }
+  
+  body{
+      font-family: "Funnel Sans", serif;
+      background-color: white;
+      color: black;
+  }
+  
+  header, footer {
+      font-family: "Roboto", serif;
+      background-color: rgb(30, 3, 56);
+      color: white;
+      padding: 28px;
+      
+  }
+  
+  h2, footer {
+      text-align: center;
+  }
+  
+  .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .gallery figure {
+      margin: 10px 0;
+      text-align: center;
+  }
+  
+  .gallery img {
+      width: 200px;
+      height: auto;
+  }
+  
+  main {
+      margin-top: 15px;
+      margin-bottom: 20px;
+  }

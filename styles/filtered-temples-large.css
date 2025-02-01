@@ -1,0 +1,47 @@
+@media (min-width: 54.5em) {
+
+    header {
+        display: flex;
+        flex-direction: row;  
+      }
+
+    footer {
+        padding: 30px;
+    }
+	#menu {
+		display: none; 
+	}
+
+	.navigation {
+        flex-direction: row;
+        justify-content: flex-end;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .gallery img {
+        width: 70%; 
+        height: auto;
+        object-fit: cover; 
+        border-radius: 5px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    }
+
+    header, footer {
+        font-family: "Roboto", serif;
+        background-color: rgb(30, 3, 56);
+        color: white;
+        padding: 48px;
+        
+    }
+}
