@@ -79,3 +79,25 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+
+  .map-container {
+    position: relative;
+    width: 100%; /* Make it scale to full width */
+    padding: 2rem 0;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+  }
+
+  .map-container h2 {
+    margin-left: 20px;
+  }
+  
+  .map-container iframe {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 90%;
+    height: 75%;
+    border: 0;
+  }
+  
