@@ -27,11 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Get the current year for the footer
+    // Get the current year for the footer using template literals
     const currentYear = new Date().getFullYear();
-    document.getElementById('currentyear').textContent = currentYear;
+    document.getElementById('currentyear').textContent = `${currentYear}`;
 
-    // Get the last modified date and format it
+    // Get the last modified date and format it using template literals
     const lastModifiedDate = new Date(document.lastModified);
     const formattedDate = lastModifiedDate.toLocaleDateString("en-US", {
         year: "numeric",
@@ -48,11 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctaButton = document.querySelector('.cta-button');
     if (ctaButton) {
         ctaButton.addEventListener('click', (event) => {
-            // Get the href of the button
             const href = ctaButton.getAttribute('href');
-            // Check if the href is not null or empty
             if (href) {
-                // Redirect to the href
                 window.location.href = href;
             }
         });
@@ -63,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Thank you for contacting us! We will get back to you soon.');
+            alert(`Thank you for contacting us! We will get back to you soon.`);
             contactForm.reset();
         });
     }
@@ -73,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (consultationForm) {
         consultationForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            alert('Thank you for booking your consultation! We will contact you shortly.');
+            alert(`Thank you for booking your consultation! We will contact you shortly.`);
             consultationForm.reset();
         });
     }
@@ -86,10 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const answer = item.querySelector('.faq-answer');
 
             question.addEventListener('click', () => {
-                // Toggle the active class on the answer
                 answer.classList.toggle('active');
 
-                // Close other answers when one is opened
                 faqItems.forEach(otherItem => {
                     if (otherItem !== item) {
                         otherItem.querySelector('.faq-answer').classList.remove('active');
@@ -98,4 +93,29 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Storing and retrieving FAQ data
+    const faqData = {
+        "faq1": {
+            question: "What is TeleConnect Health?",
+            answer: "TeleConnect Health is a platform for virtual doctor consultations."
+        },
+        "faq2": {
+            question: "How do I schedule an appointment?",
+            answer: "You can schedule an appointment through the 'Book a Consultation' button."
+        }
+    };
+
+    // Storing data to localStorage (if applicable)
+    const lastVisit = localStorage.getItem('lastVisit');
+    if (lastVisit) {
+        console.log(`Welcome back! Your last visit was on ${lastVisit}`);
+    } else {
+        console.log("Welcome! This is your first visit.");
+    }
+
+    // Store current visit date in localStorage
+    const currentVisit = new Date().toLocaleString();
+    localStorage.setItem('lastVisit', currentVisit);
+
 });
