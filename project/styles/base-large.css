@@ -1,0 +1,41 @@
+/* Media Query for larger screens */
+@media (min-width: 54.5em) {
+    .container {
+        max-width: 1200px;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav li {
+        margin-left: 30px;
+    }
+
+    .feature-grid, .reason-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid for larger screens */
+    }
+
+    .hero {
+      padding: 6rem 0;
+    }
+}
+
+@media (max-width: 54.4em) {
+    .desktop-nav {
+        display: none;
+    }
+}
+
+/* Show desktop nav and hide mobile nav on larger screens */
+@media (min-width: 54.5em) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+.header-content { /* New style rule */
+    display: flex;
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Vertically align items */
+}

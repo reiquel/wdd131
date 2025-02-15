@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact TeleConnect Health for inquiries, support, or consultations. Reach out via email, phone, or visit our office in Santo Domingo Este.">
+  <meta name="author" content="Reiquel Y. Carela">
+  <title>Contact Us - TeleConnect Health</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/base-large.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="scripts/base.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <h1>TeleConnect Health</h1>
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="consultation.html" class="nav-link">Consultation</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-nav">
+          <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="mobile-menu">
+            <button class="close-menu">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul>
+              <li><a href="index.html" class="nav-link">Home</a></li>
+              <li><a href="consultation.html" class="nav-link">Consultation</a></li>
+              <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-info">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to us for inquiries, support, or consultations.</p>
+        <div class="contact-details">
+          <p><strong>Email:</strong> <a href="mailto:info@teleconnecthealth.com">info@teleconnecthealth.com</a></p>
+          <p><strong>Phone:</strong> +1 (809) 555-1234 (General Inquiries)</p>
+          <p><strong>Address:</strong> Carr. de Mendoza 52-48, Santo Domingo Este</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <div class="container">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject">
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="cta-button">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <div class="faq-question">How do I schedule a consultation?</div>
+          <div class="faq-answer">You can schedule a consultation by visiting the "Schedule Consultations" section on our homepage and following the prompts.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can I upload my prescription?</div>
+          <div class="faq-answer">Yes, you can upload your prescription during the consultation booking process or through your account dashboard.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How do I get medications delivered?</div>
+          <div class="faq-answer">We partner with pharmacies to deliver medications to your home. You can select this option during your consultation.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Where can I find health resources?</div>
+          <div class="faq-answer">You can find health resources and blogs in the "Health Blogs" section of our website.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="container">
+        <h2>Our Location</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.041742257937!2d-69.856839684733!3d18.48577598740587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89c0f7f8f8f7%3A0x8eaf89c0f7f8f8f7!2sCarr.%20de%20Mendoza%2052-48%2C%20Santo%20Domingo%20Este!5e0!3m2!1sen!2sdo!4v1633020000000!5m2!1sen!2sdo"
+          width="100%"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="currentyear"></span> 📟 Reiquel Y. Carela 📟 Dominican Republic</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
