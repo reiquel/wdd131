@@ -25,6 +25,11 @@
     .desktop-nav {
         display: none;
     }
+
+    .map-container h2 {
+        margin-left: 120px;
+        margin-top: -30px;
+      }
 }
 
 /* Show desktop nav and hide mobile nav on larger screens */

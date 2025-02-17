@@ -90,11 +90,12 @@
 
   .map-container h2 {
     margin-left: 20px;
+    margin-top: -30px;
   }
   
   .map-container iframe {
     position: absolute;
-    top: 100px;
+    top: 70px;
     left: 20px;
     width: 90%;
     height: 75%;
