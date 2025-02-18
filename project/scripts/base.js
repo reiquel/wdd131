@@ -109,9 +109,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Storing data to localStorage (if applicable)
     const lastVisit = localStorage.getItem('lastVisit');
     if (lastVisit) {
-        console.log(`Welcome back! Your last visit was on ${lastVisit}`);
+        alert(`Welcome back! Your last visit was on ${lastVisit}`);
     } else {
-        console.log("Welcome! This is your first visit.");
+        alert("Welcome! This is your first visit.");
     }
 
     // Store current visit date in localStorage
